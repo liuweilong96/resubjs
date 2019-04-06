@@ -37,16 +37,16 @@ window.addEventListener("mousemove", function (e){
 })
 
 window.addEventListener("touchstart", function (e){
-    x = e.offsetX;
-    y = e.offsetY;
+    x = e.pageX;
+    y = e.pageY;
     pen(x,y,radius,color)
 })
 
 window.addEventListener("touchmove", function (e){
     // x = e.offsetX;
     // y = e.offsetY;
-    x = e.touches[0].screenX
-    y = e.touches[0].screenY
+    x = e.touches[0]
+    y = e.touches[0]
     pen(x,y,radius,color)
 })
 
