@@ -45,8 +45,8 @@ window.addEventListener("touchstart", function (e){
 window.addEventListener("touchmove", function (e){
     // x = e.offsetX;
     // y = e.offsetY;
-    x = e.touches[0]
-    y = e.touches[0]
+    x = e.touches[0].screenX
+    y = e.touches[0].screenY
     pen(x,y,radius,color)
 })
 
